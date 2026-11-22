@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="দারুল আরকাম মাদরাসা, আরিচপুর, টঙ্গী, গাজীপুর। মাদরাসার পরিচিতি, শিক্ষা বিভাগ ও ভর্তি সংক্রান্ত তথ্য।">
-  <title>দারুল আরকাম মাদরাসা | Darul Arkam Madrasah</title>
+  <meta name="description" content="দারুল আরকাম মহিলা মাদরাসা, আরিচপুর, টঙ্গী, গাজীপুর। মাদরাসার পরিচিতি, শিক্ষা বিভাগ ও ভর্তি সংক্রান্ত তথ্য।">
+  <title>দারুল আরকাম মহিলা মাদরাসা | Darul Arkam Mohilha Madrasah</title>
   <style>
     :root{--green:#176b45;--deep:#104b32;--pale:#edf7f0;--gold:#d8b65c;--ink:#1d2b23;--muted:#64736a;--white:#fff}
     *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;color:var(--ink);line-height:1.7;background:#fff}
@@ -45,7 +45,7 @@
         <div class="field"><label for="student">শিক্ষার্থীর নাম *</label><input id="student" name="student" required placeholder="শিক্ষার্থীর পূর্ণ নাম"></div>
         <div class="field"><label for="guardian">অভিভাবকের নাম *</label><input id="guardian" name="guardian" required placeholder="অভিভাবকের নাম"></div>
         <div class="field"><label for="phone">মোবাইল নম্বর *</label><input id="phone" name="phone" type="tel" required placeholder="01XXXXXXXXX" pattern="01[0-9]{9}"></div>
-        <div class="field"><label for="department">ভর্তির বিভাগ *</label><select id="department" name="department" required><option value="">বিভাগ নির্বাচন করুন</option><option>নূরানি বিভাগ</option><option>নাজেরা বিভাগ</option><option>হিফজুল কুরআন বিভাগ</option><option>কিতাব বিভাগ</option><option>তাকমিল (দাওরায়ে হাদিস)</option><option>ইফতা বিভাগ</option></select></div>
+        <div class="field"><label for="department">ভর্তির বিভাগ *</label><select id="department" name="department" required><option value="">বিভাগ নির্বাচন করুন</option><option>নূরানি বিভাগ</option><option>শিশু</option><option>নার্সারী</option><option>১ম/আওয়াল</option><option>২য়/সানী</option><option>৩য়/ছালেছ</option><option>৪র্থ/রাবে</option><option>নাজেরা বিভাগ</option><option>হিফজুল কুরআন বিভাগ</option><option>কিতাব বিভাগ</option><option>তাইসীর</option><option>মিজান</option><option>নাহবেমীর</option><option>কুদূরী</option><option>শরহে বেকায়া</option><option>হেদায়া</option><option>মিশকাত</option><option>তাকমিল (দাওরায়ে হাদিস)</option><option>ইফতা বিভাগ</option></select></div>
         <div class="field"><label for="age">শিক্ষার্থীর বয়স</label><input id="age" name="age" type="number" min="3" max="100" placeholder="বয়স"></div>
         <div class="field"><label for="previous">পূর্ববর্তী শিক্ষা</label><input id="previous" name="previous" placeholder="যে মাদরাসা/শ্রেণিতে পড়েছে"></div>
         <div class="field full"><label for="address">ঠিকানা *</label><textarea id="address" name="address" rows="3" required placeholder="গ্রাম/এলাকা, থানা, জেলা"></textarea></div>
@@ -53,14 +53,14 @@
     </div></section>
     <section class="section" id="contact"><div class="wrap"><div class="heading"><h2>যোগাযোগ</h2><p>প্রয়োজনে আমাদের সঙ্গে যোগাযোগ করুন</p></div><div class="contact-grid"><div class="contact-item"><strong>📍 ঠিকানা</strong>আরিচপুর, টঙ্গী, গাজীপুর, বাংলাদেশ</div><div class="contact-item"><strong>☎ মোবাইল</strong><a href="tel:01861250741">01861250741</a><br><a href="https://wa.me/8801861250741" target="_blank" rel="noopener">WhatsApp-এ যোগাযোগ</a></div></div></div></section>
   </main>
-  <footer><div class="wrap"><p><strong>দারুল আরকাম মাদরাসা</strong></p><p>আরিচপুর, টঙ্গী, গাজীপুর, বাংলাদেশ</p><p>মোবাইল: 01861250741</p><p class="small">© <span id="year"></span> Darul Arkam Madrasah. সর্বস্বত্ব সংরক্ষিত।</p></div></footer>
+  <footer><div class="wrap"><p><strong>দারুল আরকাম মাদরাসা</strong></p><p>আরিচপুর, টঙ্গী, গাজীপুর, বাংলাদেশ</p><p>মোবাইল: 01977020030</p><p class="small">© <span id="year"></span> Darul Arkam Mohilha Madrasah. সর্বস্বত্ব সংরক্ষিত।</p></div></footer>
   <script>
     document.getElementById('year').textContent=new Date().getFullYear();
     document.getElementById('admissionForm').addEventListener('submit',function(e){
       e.preventDefault(); if(!this.reportValidity()) return;
       const d=new FormData(this);
-      const msg=['দারুল আরকাম মাদরাসায় ভর্তি আবেদন','শিক্ষার্থীর নাম: '+d.get('student'),'অভিভাবকের নাম: '+d.get('guardian'),'মোবাইল: '+d.get('phone'),'বিভাগ: '+d.get('department'),'বয়স: '+(d.get('age')||'উল্লেখ নেই'),'পূর্ববর্তী শিক্ষা: '+(d.get('previous')||'উল্লেখ নেই'),'ঠিকানা: '+d.get('address')].join('\n');
-      window.open('https://wa.me/8801861250741?text='+encodeURIComponent(msg),'_blank','noopener');
+      const msg=['দারুল আরকাম মহিলা মাদরাসায় ভর্তি আবেদন','শিক্ষার্থীর নাম: '+d.get('student'),'অভিভাবকের নাম: '+d.get('guardian'),'মোবাইল: '+d.get('phone'),'বিভাগ: '+d.get('department'),'বয়স: '+(d.get('age')||'উল্লেখ নেই'),'পূর্ববর্তী শিক্ষা: '+(d.get('previous')||'উল্লেখ নেই'),'ঠিকানা: '+d.get('address')].join('\n');
+      window.open('https://wa.me/8801977020030?text='+encodeURIComponent(msg),'_blank','noopener');
     });
   </script>
 </body>
